@@ -2,22 +2,28 @@ class Wektor2D
 {
 double x, y;
 
-public: Wektor2D(double a, double b) //Konstruktor
+
+public: 
+
+ Wektor2D() //Konstruktor pusty
+    {
+        x=0.0;
+        y=0.0;
+    }
+Wektor2D(double a, double b) //Konstruktor
     {
         x=a;
         y=b; //stworzy sie wektor po wywolaniu o wspolrzednych x,y = 0,0 po wywolaniu
     }
 
-    Wektor2D() //Konstruktor pusty
-    {
-
-    }
+   
 
 void setX(double a) { x = a; } // Settery (ustawiają wartości)
 void setY(double b) { y = b; }
 
 double getX() { return x; } // Gettery (zwracają wartości)
 double getY() { return y; }
+
 };
 
 
